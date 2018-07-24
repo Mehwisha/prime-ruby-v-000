@@ -1,4 +1,12 @@
 # Add  code here!
-def prime?(integer)
+def prime?(int)
+first = 2
+if int > 1
+  range = (start..int-1).to_a
+  range.none? do |int_to_test|
+    int % int_to_test == 0
+  end
+else
+  false
 
 end
